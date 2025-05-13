@@ -1,38 +1,263 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.App{
+  width:100vw;
+  min-height:180vh;
+  max-height: auto;
+  background: linear-gradient(to top right, #9E4084, #0E0A0B, #291440, #374E9C);
+  display:flex;
+  flex-direction:column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding:30px;
+
+}
+.logo{
+ 
+  width:200px;
+  margin-bottom:40px;
+  z-index: 10;
+  
+}
+.top-right {
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    width: 134px;
+    z-index: 1;
+}
+.bottom-right {
+    position: absolute;
+    bottom: -50%;
+    right: 0%;
+    z-index: 1;
+    width: 150px;
+}
+.top-left {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    width: 110px;
+}
+.top-left-ball{
+   position: absolute;
+  top: 16%;
+  left: 1%;
+  z-index: 1;
+  width: 140px;
+}
+.top-left-ball2 {
+    position: absolute;
+    top: 0%;
+    left: 80px;
+    z-index: 1;
+    width: 140px;
+}
+.bottom-left{
+   position: absolute;
+  top:100%;
+  left: 0%;
+  z-index: 1;
+  width: 170px;
+}
+.bottom-left-ball {
+    position: absolute;
+    top:103%;
+    left: 84px;
+    z-index: 1;
+    width: 106px;
+}
+.bottom-left-ball2 {
+    position: absolute;
+    top:101%;
+    left: 0%;
+    z-index: 1;
+    width: 153px;
+}
+h1{
+font-family: "League Spartan", sans-serif;
+font-weight: 600;
+font-size: 45px;
+text-align: center;
+vertical-align: middle;
+ background: linear-gradient(#FFFFFF, #252525); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+margin-bottom:40px;
+  z-index: 100;
+
+
+}
+.coming{
+  color:white;
+  font-size:50px;
+  font-family: "League Spartan", sans-serif;
+  margin-top:13%;
+  font-weight: 600;
+}
+.query{
+  display:flex;
+  gap:20px;
+  background: rgba(255, 255, 255, 0.1); /* transparent background */
+  border-radius: 12px;
+  backdrop-filter: blur(10px); /* actual blur */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  padding:5px;
   color: white;
+  margin-top:25%;
+  font-size:14px;
 }
-
-.App-link {
-  color: #61dafb;
+.number{
+  display:flex;
+  gap:10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @media screen and (max-width:700px) {
+    .top-right {
+        position: absolute;
+        top: 6%;
+        right: 2%;
+        width: 100px;
+        z-index: 1;
+    }
+    .bottom-right {
+        position: absolute;
+        bottom:-50%;
+        right: 0%;
+        z-index: 1;
+        width: 100px;
+    }
+.top-left {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    width: 75px;
+}
+.top-left-ball {
+    position: absolute;
+    top: 11%;
+    left: 1%;
+    z-index: 1;
+    width: 90px;
+}
+.top-left-ball2 {
+    position: absolute;
+    top: 0%;
+    left: 54px;
+    z-index: 1;
+    width: 100px;
+}
+.bottom-left {
+        position: absolute;
+        top:100%;
+        left: 0%;
+        z-index: 1;
+        width: 110px;
+    }
+.bottom-left-ball {
+        position: absolute;
+        top: 103%;
+        left: 35px;
+        z-index: 1;
+        width: 65px;
+    }
+.bottom-left-ball2 {
+        position: absolute;
+        top:101%;
+        left: 0%;
+        z-index: 1;
+        width: 83px;
+    }
   }
-  to {
-    transform: rotate(360deg);
+
+  @media screen and (max-width:500px){
+    .App{
+      min-height:150vh;
+    }
+  .query{
+    font-size:10px;
   }
-}
+  }
+   @media screen and (max-width:450px) {
+    h1{
+      font-size:35px;
+    }
+    .coming{
+      font-size:35px;
+    }
+  .top-right {
+        position: absolute;
+        top: 6%;
+        right: 2%;
+        width: 100px;
+        z-index: 1;
+    }
+.bottom-right {
+        position: absolute;
+        bottom:-50%;
+        right: 0%;
+        z-index: 1;
+        width: 100px;
+    }
+.top-left {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: 1;
+        width: 54px;
+    }
+.top-left-ball {
+        position: absolute;
+        top: 8%;
+        left: 1%;
+        z-index: 1;
+        width: 64px;
+    }
+.top-left-ball2 {
+        position: absolute;
+        top: 0%;
+        left: 44px;
+        z-index: 1;
+        width: 57px;
+    }
+.bottom-left {
+        position: absolute;
+        top:100%;
+        left: 0%;
+        z-index: 1;
+        width: 110px;
+    }
+.bottom-left-ball {
+        position: absolute;
+        top:103%;
+        left: 35px;
+        z-index: 1;
+        width: 65px;
+    }
+.bottom-left-ball2 {
+        position: absolute;
+        top:101%;
+        left: 0%;
+        z-index: 1;
+        width: 83px;
+    }
+   }
+
+   @media screen and (max-width:360px) {
+    .bottom-right {
+        position: absolute;
+        bottom:-50%;
+        right: 0%;
+        z-index: 1;
+        width: 100px;
+    }
+    .query{
+      font-size:7px;
+    }
+  }
