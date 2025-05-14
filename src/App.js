@@ -1,7 +1,12 @@
 
+
 import './App.css';
 
 function App() {
+  
+  const handleRegister=()=>{
+  window.location.href = "https://lu.ma/d7m7dqev";
+  }
   return (
     <div className="App">
        <div className="logo">
@@ -32,7 +37,8 @@ function App() {
         </div>
       </div>
       <h1>Trained & Tuned'25</h1>
-      <h2 className="coming">Coming Soon!</h2>
+      <h2 className="coming">Join our hands-on Python and Machine Learning workshop, designed for beginners. Gain practical skills, build real projects, and take your first step into the world of AI. Free registration.</h2>
+      <button className="register" onClick={handleRegister}>Register now</button>
       <div className="query">
       <span>For Any Query</span>
       <span className="number">

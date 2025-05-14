@@ -7,11 +7,11 @@
 }
 .App{
   width:100vw;
-  min-height:180vh;
-  max-height: auto;
+  height:120vh;
   background: linear-gradient(to top right, #9E4084, #0E0A0B, #291440, #374E9C);
   display:flex;
   flex-direction:column;
+  justify-content: space-around;
   align-items: center;
   padding:30px;
 
@@ -20,7 +20,7 @@
  
   width:200px;
   margin-bottom:40px;
-  z-index: 10;
+  z-index: 10000;
   
 }
 .top-right {
@@ -32,7 +32,7 @@
 }
 .bottom-right {
     position: absolute;
-    bottom: -50%;
+    bottom: 10%;
     right: 0%;
     z-index: 1;
     width: 150px;
@@ -60,24 +60,24 @@
 }
 .bottom-left{
    position: absolute;
-  top:100%;
+  top:83%;
   left: 0%;
   z-index: 1;
-  width: 170px;
+  width: 137px;
 }
 .bottom-left-ball {
     position: absolute;
-    top:103%;
+    top:86%;
     left: 84px;
     z-index: 1;
-    width: 106px;
+    width: 80px;
 }
 .bottom-left-ball2 {
     position: absolute;
-    top:101%;
-    left: 0%;
+    top:86%;
+    left: 2%;
     z-index: 1;
-    width: 153px;
+    width: 100px;
 }
 h1{
 font-family: "League Spartan", sans-serif;
@@ -88,17 +88,18 @@ vertical-align: middle;
  background: linear-gradient(#FFFFFF, #252525); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-margin-bottom:40px;
+margin-top:-100px;
   z-index: 100;
 
 
 }
 .coming{
+  width:70%;
   color:white;
-  font-size:50px;
+  font-size:19px;
   font-family: "League Spartan", sans-serif;
-  margin-top:13%;
-  font-weight: 600;
+ 
+  font-weight: 200;
 }
 .query{
   display:flex;
@@ -110,13 +111,36 @@ margin-bottom:40px;
   border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
   padding:5px;
   color: white;
-  margin-top:25%;
+  z-index:100;
   font-size:14px;
 }
 .number{
   display:flex;
   gap:10px;
 }
+.register {
+  /* width: 195px;
+  height: 53px; */
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  padding:10px;
+  color: white;
+  background: rgba(255, 255, 255, 0.15); /* lighter glassy background */
+  border-radius: 7.28px;
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px); /* for Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* gentle shadow */
+  transition: transform 0.2s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.register:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.25);
+}
+
   @media screen and (max-width:700px) {
     .top-right {
         position: absolute;
@@ -127,7 +151,7 @@ margin-bottom:40px;
     }
     .bottom-right {
         position: absolute;
-        bottom:-50%;
+        bottom:-15%;
         right: 0%;
         z-index: 1;
         width: 100px;
@@ -155,21 +179,21 @@ margin-bottom:40px;
 }
 .bottom-left {
         position: absolute;
-        top:100%;
+        top:86%;
         left: 0%;
         z-index: 1;
-        width: 110px;
+        width: 98px;
     }
 .bottom-left-ball {
         position: absolute;
-        top: 103%;
+        top: 86%;
         left: 35px;
         z-index: 1;
         width: 65px;
     }
 .bottom-left-ball2 {
         position: absolute;
-        top:101%;
+        top:88%;
         left: 0%;
         z-index: 1;
         width: 83px;
@@ -177,9 +201,7 @@ margin-bottom:40px;
   }
 
   @media screen and (max-width:500px){
-    .App{
-      min-height:150vh;
-    }
+   
   .query{
     font-size:10px;
   }
@@ -189,18 +211,22 @@ margin-bottom:40px;
       font-size:35px;
     }
     .coming{
-      font-size:35px;
+      font-size:14px;
+      width:100%;
+    }
+    .register{
+      font-size: 20px;
     }
   .top-right {
         position: absolute;
-        top: 6%;
+        top: 4%;
         right: 2%;
-        width: 100px;
+        width: 68px;
         z-index: 1;
     }
 .bottom-right {
         position: absolute;
-        bottom:-50%;
+        bottom:-18%;
         right: 0%;
         z-index: 1;
         width: 100px;
@@ -228,36 +254,50 @@ margin-bottom:40px;
     }
 .bottom-left {
         position: absolute;
-        top:100%;
+        top:88%;
         left: 0%;
         z-index: 1;
-        width: 110px;
+        width: 90px;
     }
 .bottom-left-ball {
         position: absolute;
-        top:103%;
+        top:87%;
         left: 35px;
         z-index: 1;
         width: 65px;
     }
 .bottom-left-ball2 {
         position: absolute;
-        top:101%;
+        top:90%;
         left: 0%;
         z-index: 1;
-        width: 83px;
+        width: 70px;
     }
    }
 
    @media screen and (max-width:360px) {
     .bottom-right {
         position: absolute;
-        bottom:-50%;
+        bottom:-18%;
         right: 0%;
         z-index: 1;
         width: 100px;
     }
+    .top-right{
+      width:55px;
+    }
     .query{
       font-size:7px;
+    }
+    .bottom-left-ball {
+        position: absolute;
+        top: 90%;
+        left: 35px;
+        z-index: 1;
+        width: 47px;
+    }
+        .bottom-left {
+      
+        width: 73px;
     }
   }
